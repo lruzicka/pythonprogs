@@ -44,7 +44,6 @@ labels = cleantable.keys()
 sizes = []
 for item in labels:
     sizes.append(cleantable[item])
-explode = (0, 0.1, 0, 0)  # move away a bit
 
 font = "Liberation Sans"
 
