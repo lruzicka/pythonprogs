@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
+from matplotlib import font_manager as fm
+from textwrap import wrap
 
 
-
-with open('results.csv','r') as d:
+with open('resteam.csv','r') as d:
     data = d.readlines()
 
 print("Parsing the data file.")
@@ -40,27 +41,37 @@ for key in cleantable.keys():
        
 print(cleantable)
 
-labels = cleantable.keys()
+tmplabels = cleantable.keys()
+labels = []
+for lab in tmplabels:
+    lab = "\n".join(wrap(lab, 25))
+    labels.append(lab)
+
 sizes = []
-for item in labels:
+for item in tmplabels:
     sizes.append(cleantable[item])
 
 font = "Liberation Sans"
-
 print("Using font: %s" % font)
-
 plt.rcParams['font.sans-serif'] = [font, 'sans-serif']
 
-
 fig1, ax1 = plt.subplots()
+colors = ('yellow', 'lime','red','cyan','orange')
 
-ax1.pie(sizes,labels=labels,autopct='%1.1f%%',
+
+patches, texts, autotexts = ax1.pie(sizes,labels=labels,colors=colors,autopct='%1.1f%%',
         shadow=True, startangle=90)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
+# změna stylu písma
+proptease = fm.FontProperties()
+proptease.set_size('xx-large')
+plt.setp(autotexts, fontproperties=proptease)
+plt.setp(texts, fontproperties=proptease)
 plt.title(title)
+ax1.title.set_fontsize(25)
 plt.show()
 
 
-    
+   
     
