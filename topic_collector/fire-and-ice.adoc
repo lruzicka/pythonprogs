@@ -1,7 +1,7 @@
 :rhid: fire-and-ice
 :type: topic
 :used: robert-frost
-:previous:
+:prev:
 :next: late-walk 
 
 

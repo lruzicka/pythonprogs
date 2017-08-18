@@ -1,7 +1,7 @@
 :rhid: wild-nights
 :type: topic
 :used: emily-dickenson
-:previous: liquor-never-brewed
+:prev: liquor-never-brewed
 :next: success-is-counted-sweetest 
 
 = Wild nights

@@ -1,7 +1,7 @@
 :rhid: success-is-counted-sweetest
 :type: topic
 :used: emily-dickenson
-:previous: wild-nights
+:prev: wild-nights
 :next:  
 
 = Success is counted sweetest

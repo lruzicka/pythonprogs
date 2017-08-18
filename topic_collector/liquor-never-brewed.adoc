@@ -1,7 +1,7 @@
 :rhid: liquor-never-brewed
 :type: topic
 :used: emily-dickenson
-:previous:
+:prev:
 :next: wild-nights 
 
 
