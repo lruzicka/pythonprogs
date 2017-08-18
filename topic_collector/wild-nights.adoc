@@ -1,3 +1,9 @@
+:rhid: wild-nights
+:type: topic
+:used: emily-dickenson
+:previous: liquor-never-brewed
+:next: success-is-counted-sweetest 
+
 = Wild nights
 
 Wild nights - Wild nights!

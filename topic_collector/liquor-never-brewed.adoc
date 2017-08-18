@@ -1,3 +1,10 @@
+:rhid: liquor-never-brewed
+:type: topic
+:used: emily-dickenson
+:previous:
+:next: wild-nights 
+
+
 = I taste a liquor never brewed.
 
 I taste a liquor never brewed – 
