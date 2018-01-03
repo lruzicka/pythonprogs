@@ -10,3 +10,7 @@ You can use and alter them according to the GPL license.
 ## reader.py
 
 **reader.py** is a simple script that parses the attached CSV file, which holds questions and answers in columns. It asks for a column number, calculates the sums of unique answers and draws a pie chart using the matplotlib library.
+
+## russian.py
+
+**russian.py** is a simple game simulating the Russian Roulette. Try your luck! You may not die this time.
