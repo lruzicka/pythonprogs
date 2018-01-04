@@ -54,8 +54,10 @@ if bullets < slots:
             
         else:
             print("You painted the walls with your brain!")
+            print("Listen to this: https://www.youtube.com/watch?v=aGKa8m7i9pY")
             risk = False
             
     
 else:
     print("You are stupid, you cannot load so many bullets. You only have {} slots.".format(slots))
+
