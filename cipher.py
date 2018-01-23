@@ -1,3 +1,22 @@
+class Alphabet(object):
+    def __init__(self):
+        self.alphabet = {}
+        for i in range(129):
+            self.alphabet[i] = chr(i)
+        
+    def get_value(self, key):
+        value = self.alphabet[key]
+        return(value)
+        
+    def get_key(self, value):
+        for i in self.alphabet.items():
+            if i[1] == value:
+                key = i[0]
+        return(key)
+    
+
+
+
 class Message(object):
     def __init__(self):
         self.alphabet = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -19,7 +38,9 @@ class Message(object):
         pass
 
 
-text = Message()
-text.input_clean("This is a text.")
-print(text.numalph())
-print(text.output_clean())
+abeceda = Alphabet()
+alfa = abeceda.get_value(97)
+beta = abeceda.get_key("a")
+
+print(alfa)
+print(beta)
