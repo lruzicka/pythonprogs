@@ -13,6 +13,20 @@ class Alphabet(object):
             if i[1] == value:
                 key = i[0]
         return(key)
+        
+    def get_used_letters(self,text):
+        letters = []
+        for c in text:
+            if c not in letters:
+                letters.append(c)
+        letters = "".join(letters)
+        return(letters)
+        
+    def get_used_nums(self,text):
+        nums = []
+        for c in self.get_used_letters(text):
+            nums.append(self.get_key(c))
+        return(nums)
     
 
 
@@ -41,6 +55,8 @@ class Message(object):
 abeceda = Alphabet()
 alfa = abeceda.get_value(97)
 beta = abeceda.get_key("a")
+gamma = abeceda.get_used_nums("ahoj")
 
 print(alfa)
 print(beta)
+print(gamma)
