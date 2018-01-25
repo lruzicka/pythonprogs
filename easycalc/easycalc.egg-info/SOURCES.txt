@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+easycalc.egg-info/PKG-INFO
+easycalc.egg-info/SOURCES.txt
+easycalc.egg-info/dependency_links.txt
+easycalc.egg-info/entry_points.txt
+easycalc.egg-info/top_level.txt
