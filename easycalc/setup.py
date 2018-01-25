@@ -13,7 +13,7 @@ setup(
     
     name='easycalc',  # Required
 
-    version='1.0.1',  # Required
+    version='1.0.2',  # Required
     description='A very easy calculator for command line',  # Required
     #long_description=long_description,  # Optional
 

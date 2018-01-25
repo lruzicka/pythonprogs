@@ -1,6 +1,8 @@
 README.rst
 setup.cfg
 setup.py
+easycalc/__init__.py
+easycalc/easycalc.py
 easycalc.egg-info/PKG-INFO
 easycalc.egg-info/SOURCES.txt
 easycalc.egg-info/dependency_links.txt
