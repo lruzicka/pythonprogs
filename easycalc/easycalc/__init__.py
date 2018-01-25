@@ -1,0 +1,3 @@
+"""
+Initclass but empty.
+"""
