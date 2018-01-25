@@ -21,7 +21,7 @@ else:
     loop = 'y'
     out(welcome)
     while loop == 'y':
-        result = eval(input("Write you expression: "))
+        result = eval(input("Write your expression: "))
         print("Result: ",result)
         out(middle)
         loop = input("New expression? (y/n): ")
