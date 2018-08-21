@@ -1,4 +1,4 @@
-#!/bin/env/python3
+#!/usr/bin/env python3
 
 import itertools
 
@@ -74,14 +74,19 @@ class Routes:
                 cesta = {}
                 total = 0
                 for o in option:
+                    c = {}
                     total += o.price()
+                    c['start'] = o.start
+                    c['stop'] = o.stop
+                    c['type'] = o.type
+                    c['price'] = o.price()
                     if not 'start' in cesta.keys():
-                        cesta['start'] = o.start
-                        cesta['via'] = o.stop
+                        cesta['start'] = c
+                        cesta['type'] = c['type']
                     else:
-                        cesta['stop'] = o.stop
-                    cesta['price'] = total
-                print(cesta)
+                        cesta['via'] = c
+                        cesta['type'] = f"{cesta['type']},{c['type']}"
+                cesta['price'] = total
                    
             else:
                 print(f"{option.start}, {option.stop}, {option.type}, {option.price()}")
