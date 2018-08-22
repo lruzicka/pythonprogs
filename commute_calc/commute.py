@@ -69,9 +69,8 @@ class Routes:
         options = self.show_options(start, stop)
         result = []
         for option in options:
-            cesty = {}
+            cesta = {}
             if isinstance(option, list):
-                cesta = {}
                 total = 0
                 for o in option:
                     c = {}
@@ -87,9 +86,13 @@ class Routes:
                         cesta['via'] = c
                         cesta['type'] = f"{cesta['type']},{c['type']}"
                 cesta['price'] = total
-                   
+                print(cesta)
             else:
-                print(f"{option.start}, {option.stop}, {option.type}, {option.price()}")
+                cesta['start'] = option.start
+                cesta['stop'] = option.stop
+                cesta['type'] = option.type
+                cesta['price'] = option.price()
+                print(cesta)
         
 
     
@@ -119,6 +122,8 @@ cesty = [
         'brno,breclav,train,0,80',
         'mikulov,breclav,train,0,33',
         'breclav,mikulov,train,0,33',
+        'vranovice,breclav,car,36.7,0',
+        'breclav,vranovice,car,36.7,0'
         ]
 
 
@@ -131,4 +136,5 @@ for cesta in cesty:
     routes.add_route(route)
     
 
-routes.show_prices('mikulov','brno')
+#routes.show_prices('mikulov','brno')
+routes.show_prices('vranovice','breclav')
